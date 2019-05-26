@@ -16,7 +16,7 @@ class IndexController extends ControllerBase implements IFrontEnd
 {
 
     public function indexAction()
-    {  ;
+    {  
         $locale = \Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
         $lang=   \Locale::getPrimaryLanguage(  $locale );
         $model=new IndexModel();
